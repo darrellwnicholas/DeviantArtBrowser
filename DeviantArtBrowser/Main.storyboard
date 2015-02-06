@@ -104,6 +104,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="customImageView" destination="bX3-bT-Q0G" id="RfV-ic-Bhh"/>
                                             <outlet property="subtitleLabel" destination="Nlu-H4-Agu" id="Pde-T6-4nZ"/>
                                             <outlet property="titleLabel" destination="KQR-jX-JTM" id="kBg-B4-hHq"/>
                                             <segue destination="uVy-lQ-chj" kind="push" id="L2Z-yW-LS1"/>
