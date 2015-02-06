@@ -29,8 +29,8 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
   }
   
   func configureTableView() {
-    
-    // TODO: Write this...
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 160.0
   }
   
   override func viewWillAppear(animated: Bool) {
