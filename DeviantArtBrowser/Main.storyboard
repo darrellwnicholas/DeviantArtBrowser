@@ -64,6 +64,51 @@
                                             <segue destination="cYf-WF-j3i" kind="push" id="NFr-fS-q7m"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="141" id="9da-yD-4zr" customClass="ImageCell" customModule="DeviantArtBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9da-yD-4zr" id="bHb-41-OFW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="172" placeholderIntrinsicHeight="20.5" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQR-jX-JTM">
+                                                    <rect key="frame" x="128" y="20" width="172" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="172" placeholderIntrinsicHeight="20.5" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlu-H4-Agu">
+                                                    <rect key="frame" x="128" y="45" width="172" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-bT-Q0G">
+                                                    <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" priority="999" constant="100" id="SVG-4K-GU9"/>
+                                                        <constraint firstAttribute="height" priority="999" constant="100" id="oaL-ls-dlh"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KQR-jX-JTM" firstAttribute="top" secondItem="bHb-41-OFW" secondAttribute="top" constant="20" id="0ta-xW-KFt"/>
+                                                <constraint firstItem="bX3-bT-Q0G" firstAttribute="leading" secondItem="bHb-41-OFW" secondAttribute="leading" constant="20" id="Iy6-2t-EHO"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Nlu-H4-Agu" secondAttribute="bottom" constant="19.5" id="QZI-tc-e9s"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nlu-H4-Agu" secondAttribute="trailing" constant="20" id="YLA-8e-vgC"/>
+                                                <constraint firstItem="Nlu-H4-Agu" firstAttribute="leading" secondItem="bX3-bT-Q0G" secondAttribute="trailing" constant="8" id="aIJ-JT-ksb"/>
+                                                <constraint firstItem="KQR-jX-JTM" firstAttribute="leading" secondItem="bX3-bT-Q0G" secondAttribute="trailing" constant="8" id="lk1-a8-tqg"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bX3-bT-Q0G" secondAttribute="bottom" priority="999" constant="20" id="o0Q-gV-ufi"/>
+                                                <constraint firstAttribute="trailing" secondItem="KQR-jX-JTM" secondAttribute="trailing" constant="20" id="tuI-bp-yhY"/>
+                                                <constraint firstItem="Nlu-H4-Agu" firstAttribute="top" secondItem="KQR-jX-JTM" secondAttribute="bottom" constant="4" id="x2e-gN-2Vf"/>
+                                                <constraint firstItem="bX3-bT-Q0G" firstAttribute="top" secondItem="bHb-41-OFW" secondAttribute="top" constant="20" id="yTU-4Y-uIg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subtitleLabel" destination="Nlu-H4-Agu" id="Pde-T6-4nZ"/>
+                                            <outlet property="titleLabel" destination="KQR-jX-JTM" id="kBg-B4-hHq"/>
+                                            <segue destination="uVy-lQ-chj" kind="push" id="L2Z-yW-LS1"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="QJX-5Y-cJg" id="cbf-qV-KNR"/>

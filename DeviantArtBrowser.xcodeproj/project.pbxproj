@@ -15,6 +15,7 @@
 		42DC3F1819FF6ABF00FE9C83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DC3F1719FF6ABF00FE9C83 /* Main.storyboard */; };
 		42E5EAAB19F8CD62009BC414 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5EAAA19F8CD62009BC414 /* DetailViewController.swift */; };
 		547B3AD51A845AE800595EB4 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B3AD41A845AE800595EB4 /* BasicCell.swift */; };
+		547B3AD71A84718000595EB4 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B3AD61A84718000595EB4 /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		42E5EAAA19F8CD62009BC414 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42E5EAB419F8D121009BC414 /* DeviantArtBrowser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviantArtBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
 		547B3AD41A845AE800595EB4 /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		547B3AD61A84718000595EB4 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		EBD015F0ECD986AF2D24C796 /* libPods-DeviantArtBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeviantArtBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C61CFC3ABC8337F40E0690 /* Pods-DeviantArtBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviantArtBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeviantArtBrowser/Pods-DeviantArtBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				42E5EAAD19F8CDA5009BC414 /* Views */,
 				4259A9DC19F8C91200BCB608 /* Supporting Files */,
 				547B3AD41A845AE800595EB4 /* BasicCell.swift */,
+				547B3AD61A84718000595EB4 /* ImageCell.swift */,
 			);
 			path = DeviantArtBrowser;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				42E5EAAB19F8CD62009BC414 /* DetailViewController.swift in Sources */,
 				4259A9E119F8C91200BCB608 /* FeedViewController.swift in Sources */,
 				4259A9DF19F8C91200BCB608 /* AppDelegate.swift in Sources */,
+				547B3AD71A84718000595EB4 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
