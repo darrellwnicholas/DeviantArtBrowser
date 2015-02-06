@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MP0-fg-FZ6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MP0-fg-FZ6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Deviant Browser-->
@@ -16,14 +16,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4pw-eL-zhO">
-                                <rect key="frame" x="0.0" y="46" width="320" height="370"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="QJX-5Y-cJg" id="cbf-qV-KNR"/>
-                                    <outlet property="delegate" destination="QJX-5Y-cJg" id="gNG-fU-dk2"/>
-                                </connections>
-                            </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter search or blank for popular" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0oR-zv-EVJ">
                                 <rect key="frame" x="20" y="8" width="280" height="30"/>
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,6 +25,51 @@
                                     <outlet property="delegate" destination="QJX-5Y-cJg" id="POF-g8-UBw"/>
                                 </connections>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4pw-eL-zhO">
+                                <rect key="frame" x="0.0" y="46" width="320" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicCell" rowHeight="82" id="fVD-iY-4wO" customClass="BasicCell" customModule="DeviantArtBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fVD-iY-4wO" id="uc7-De-haX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2G-Dp-LnN">
+                                                    <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-4y-zhH">
+                                                    <rect key="frame" x="20" y="45" width="280" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T2G-Dp-LnN" firstAttribute="leading" secondItem="uc7-De-haX" secondAttribute="leading" constant="20" id="bon-hw-Giy"/>
+                                                <constraint firstItem="T2G-Dp-LnN" firstAttribute="top" secondItem="uc7-De-haX" secondAttribute="top" constant="20" id="eXU-Vf-aer"/>
+                                                <constraint firstAttribute="trailing" secondItem="jlg-4y-zhH" secondAttribute="trailing" constant="20" id="gAw-rz-EoK"/>
+                                                <constraint firstAttribute="bottom" secondItem="jlg-4y-zhH" secondAttribute="bottom" constant="19.5" id="jzv-tV-icL"/>
+                                                <constraint firstItem="jlg-4y-zhH" firstAttribute="leading" secondItem="uc7-De-haX" secondAttribute="leading" constant="20" id="vjS-Lr-yyA"/>
+                                                <constraint firstAttribute="trailing" secondItem="T2G-Dp-LnN" secondAttribute="trailing" constant="20" id="vw8-Qt-Ci7"/>
+                                                <constraint firstItem="jlg-4y-zhH" firstAttribute="top" secondItem="T2G-Dp-LnN" secondAttribute="bottom" constant="4" id="z2l-zn-BYi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subtitleLabel" destination="jlg-4y-zhH" id="JIy-h8-co1"/>
+                                            <outlet property="titleLabel" destination="T2G-Dp-LnN" id="zJI-hm-onZ"/>
+                                            <segue destination="cYf-WF-j3i" kind="push" id="NFr-fS-q7m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QJX-5Y-cJg" id="cbf-qV-KNR"/>
+                                    <outlet property="delegate" destination="QJX-5Y-cJg" id="gNG-fU-dk2"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -61,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Smi-kI-ANk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="-389"/>
+            <point key="canvasLocation" x="-1210" y="-390"/>
         </scene>
         <!--Deviant Media-->
         <scene sceneID="7xF-sL-9s6">
